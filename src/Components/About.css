@@ -15,3 +15,20 @@
     margin-top: 50px;
     color: #ccc8c8;
 }
+
+@media  screen and (max-width: 768px){
+    .about-div{
+        margin-top: -200px;
+        margin-left: 20px;
+    }
+    .about-div h2{
+        font-size: 25px;
+        text-align: left;
+        padding: 5%;
+    }
+    .about-div p{
+        font-size: 18px;
+        padding: 0px 5%;
+    }
+    
+}

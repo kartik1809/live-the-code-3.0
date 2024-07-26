@@ -17,7 +17,7 @@
     color: rgb(225, 234, 234);
 }
 .society-name span{
-    color: #059D58;
+    color: #059d58;
     font-weight: 600;
 }
 .hero-content{
@@ -117,4 +117,71 @@
     font-weight: 500;
     margin-bottom: 1rem;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-banner{
+        display: 100%;
+    }  
+    .countdown-timer{
+        margin-top: 40px;
+    }  
+    
+    .time-span{
+        padding-left: 10px !important;
+        font-size: 1.5rem !important;
+    }
+    .time-span2{
+        padding-left: -10px !important;
+        font-size: 1.5rem !important;
+    }
+    .time-span3{
+        padding-left: -30px !important;
+        margin-left: -10px;
+        font-size: 1.5rem !important;
+    }
+    .time-span4{
+        padding-left: -20px !important;
+        margin-left: -10px !important;
+        font-size: 1.5rem !important;
+    }
+    .timer-text{
+       font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-banner{
+        height: 200px;
+    }
+    .hero-section{
+        margin-top: -400px;
+        font-size: 3rem;
+        margin-bottom: 40px;
+        height: 1000px;
+    }
+    .society-name{
+        font-size: 25px;
+    }
+    .eventName{
+        font-size: 40px;
+    }
+    .event-desc{
+        font-size: 1.5rem;
+    }
+    .event-desc-2{
+        font-size: 12px;
+    }
+    .hero-section{
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hero-section{
+        margin-top: -350px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    
 }

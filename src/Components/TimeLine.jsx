@@ -11,7 +11,7 @@ import './TimeLine.css';
 
 const TimelineComponent = () => {
   return (
-    <>
+    <div  className='timeline'>
       <h1 className='timeline-heading'>Timeline</h1>
       <VerticalTimeline>
         {/* Timeline Element for Work Experience */}
@@ -19,7 +19,6 @@ const TimelineComponent = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid rgb(33, 150, 243)' }}
-          date="2011 - present"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<HowToRegIcon/>}
         >
@@ -35,7 +34,6 @@ const TimelineComponent = () => {
         {/* Timeline Element for Work Experience */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<CodeIcon/>}
         >
@@ -51,7 +49,6 @@ const TimelineComponent = () => {
         {/* Timeline Element for Work Experience */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<LaptopIcon/>}
         >
@@ -67,7 +64,6 @@ const TimelineComponent = () => {
         {/* Timeline Element for Work Experience */}
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<StarIcon/>}
         >
@@ -83,7 +79,6 @@ const TimelineComponent = () => {
         {/* Timeline Element for Education */}
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="April 2013"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<EmojiEventsIcon/>}
         >
@@ -103,7 +98,7 @@ const TimelineComponent = () => {
         ></VerticalTimelineElement>
       </VerticalTimeline>
       <div className='ellipse3'></div>
-    </>
+    </div>
   );
 };
 

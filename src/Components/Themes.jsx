@@ -41,7 +41,7 @@ const Themes = () => {
   }, []);
 
   return (
-    <>
+    <div className='themes-div'>
       <h1 className='themes-heading'>Themes</h1>
       <p className='head-line'>Mark the Dates to set yourself on fire</p>
       <div className="theme-comp">
@@ -67,7 +67,7 @@ const Themes = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

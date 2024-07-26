@@ -12,7 +12,7 @@ const Sponsor = () => {
         <div className="sponsor-item platinum">
           <h3 className="subtitle">Platinum</h3>
           <div className="sponsor-logos">
-            <img src="https://live-the-code-2.netlify.app/images/clients/dataverse.png" alt="DataverseOS" className="sponsor-logo" />
+            <img src=".\public\sponsors\dataverse.png" alt="DataverseOS" className="sponsor-logo" />
             <img src="https://live-the-code-2.netlify.app/images/clients/Devfolio.svg" alt="Devfolio" className="sponsor-logo" />
             <img src="https://live-the-code-2.netlify.app/images/clients/polygon.svg" alt="Polygon" className="sponsor-logo" />
           </div>

@@ -22,3 +22,11 @@
     width: 250px;
     margin: 20px;
 }
+
+@media screen and (max-width:400px) {
+    .collab-heading{
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+
+}
