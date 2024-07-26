@@ -3,7 +3,7 @@ import './Navbar.css'
 const NavBar = () => {
   return (
     <div className='Navbar'>
-      <img src="public\logo.png" alt="" className='logo'/>
+      <img src="./public/logo.png" alt="" className='logo'/>
       <ul className='navigation'>
         <li>Home</li>
         <li>About</li>

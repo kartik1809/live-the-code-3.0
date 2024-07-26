@@ -3,15 +3,15 @@ import './themes.css';
 
 const Themes = () => {
   const themes = [
-    { id: 1, img: "/public/1.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 2, img: "/public/2.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 3, img: "/public/3.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 4, img: "/public/4.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 5, img: "/public/5.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 6, img: "/public/6.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 7, img: "/public/7.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 8, img: "/public/8.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 9, img: "/public/9.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 1, img: "./public/1.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 2, img: "./public/2.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 3, img: "./public/3.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 4, img: "./public/4.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 5, img: "./public/5.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 6, img: "./public/6.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 7, img: "./public/7.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 8, img: "./public/8.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 9, img: "./public/9.png", title: "Open Innovation", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
   ];
 
   const observeRef = useRef([]);
