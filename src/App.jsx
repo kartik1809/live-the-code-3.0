@@ -11,6 +11,7 @@ import Collaborators from './Components/Collaborators';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import FooterSection from './Components/Footer/FooterSection';
 import { Twitter } from '@mui/icons-material';
 function App() {
   const parallaxData = [
@@ -66,17 +67,9 @@ function App() {
             <p className='p-no'>Name: 90238XXXXX</p>
             <p className='p-no'>Name: 35802XXXXX</p>
           </div>
-          <div className='socials'>
-            <h3 className='contact-head follow'>Follow Us:</h3>
-            <p>Geeks for Geeks</p>
-            <span className='social-icon'>
-              <span><InstagramIcon/></span>
-              <span><Twitter/></span>
-              <span><LinkedInIcon/></span>
-            </span>
-          </div>
         </div>
       </div>
+      <FooterSection/>
     </>
   )
 }

@@ -1,0 +1,23 @@
+.footer-section {
+  position: relative;
+  top: 100%;
+  color: #e4e4e4;
+  font-family: Outfit;
+  text-align: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  background: linear-gradient(-15deg, #000422 20%, #010b56 90%);
+  box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.25);
+  padding-bottom: 2.5em;
+}
+.footer-heading {
+  padding-top: 5em;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-content {
+  font-size: 16px;
+  line-height: 25.6px;
+}

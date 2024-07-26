@@ -1,14 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    if (scrollY > 50) { // Adjust the scroll threshold as needed
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className='Navbar'>
+    <div className={`Navbar ${scrolled ? 'scrolled' : ''}`}>
       <img src="https://i.postimg.cc/nL6YC87Q/logo.png" alt="Logo" className='logo'/>
       <button className='menu-toggle' onClick={toggleMenu}>
         ☰

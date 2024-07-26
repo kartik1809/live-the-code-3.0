@@ -10,10 +10,21 @@
   align-items: center;
   top: 0;
   z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+}
+
+/* Background colors and gradient (you can uncomment and adjust if needed) */
+/* .Navbar {
   background-color: #097545;
-  /* background-color: rgb(44, 83, 131); Example background color */
-  /* Uncomment and adjust if needed */
-  /* background-image: linear-gradient(109.6deg, rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1%); */
+  background: linear-gradient(-15deg, #4e5fda 20%, #081786 90%);
+  background-color: rgb(44, 83, 131);
+  background-image: linear-gradient(109.6deg, rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1%);
+} */
+
+.Navbar.scrolled {
+  background-color: #0d4a2f; /* Solid background color after scrolling */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
 
 .logo {
