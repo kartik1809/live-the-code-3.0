@@ -34,7 +34,7 @@ function App() {
         </Plx>
       </div>
       <TimeLine/>
-      <div className='brochure'><img src="./public/dummy_brochure.png" alt="brochure" /></div>
+      <div className='brochure'><img src="https://i.postimg.cc/HxYW0nQG/dummy-brochure.png" alt="brochure" /></div>
       <About/>
       <div className='ellipse4'></div>
       <Themes/>
