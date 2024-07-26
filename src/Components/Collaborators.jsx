@@ -3,17 +3,17 @@ import './Collaborators.css'
 import Carousel from './Carousel';
 const Collaborators = () => {
     const collaborators = [
-        { src: '/public/anvesh.png', alt: 'Anvesh' },
-        { src: '/public/cc_abes.png', alt: 'CC ABES' },
-        { src: '/public/cc_bv.png', alt: 'CC BV' },
-        { src: '/public/cc_mit.png', alt: 'CC MIT' },
-        { src: '/public/cdao.png', alt: 'CDAO' },
-        { src: '/public/csi.png', alt: 'CSI' },
-        { src: '/public/eve.png', alt: 'EVE' },
-        { src: '/public/gdsc.png', alt: 'GDSC' },
-        { src: '/public/gfg_abes.png', alt: 'GFG ABES' },
-        { src: '/public/gfg.png', alt: 'GFG' },
-        { src: '/public/iee.png', alt: 'IEE' },
+        { src: '/anvesh.png', alt: 'Anvesh' },
+        { src: '/cc_abes.png', alt: 'CC ABES' },
+        { src: '/cc_bv.png', alt: 'CC BV' },
+        { src: '/cc_mit.png', alt: 'CC MIT' },
+        { src: '/cdao.png', alt: 'CDAO' },
+        { src: '/csi.png', alt: 'CSI' },
+        { src: '/eve.png', alt: 'EVE' },
+        { src: '/gdsc.png', alt: 'GDSC' },
+        { src: '/gfg_abes.png', alt: 'GFG ABES' },
+        { src: '/gfg.png', alt: 'GFG' },
+        { src: '/iee.png', alt: 'IEE' },
     ];
   return (
     <div className='collaborators'>
