@@ -1,84 +1,86 @@
+/* Navbar.css */
+
 .Navbar {
-    position: fixed;
-    width: 100%;
-    color: rgb(255, 254, 254);
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    z-index: 100;
-    background-color: #097545;;
-    /* background-color: rgb(44, 83, 131); Example background color */
-    /* Uncomment and adjust if needed */
-    /* background-image: linear-gradient(109.6deg, rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1%); */
-  }
-  
-  .logo {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5%;
-  }
-  
+  position: fixed;
+  width: 100%;
+  color: rgb(255, 254, 254);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  background-color: #097545;
+  /* background-color: rgb(44, 83, 131); Example background color */
+  /* Uncomment and adjust if needed */
+  /* background-image: linear-gradient(109.6deg, rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1%); */
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.navigation {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navigation li {
+  display: inline;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.navigation li:hover {
+  cursor: pointer;
+  color: rgb(110, 153, 218);
+}
+
+/* Responsive styles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navigation.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px; /* Adjust to account for navbar height */
+  left: 0;
+  width: 100%;
+  background-color: rgb(44, 119, 131); /* Background color matches navbar */
+}
+
+.navigation li {
+  margin: 10px 0;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
   .navigation {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-  }
-  
-  .navigation li {
-    display: inline;
-    margin: 0 10px;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  
-  .navigation li:hover {
-    cursor: pointer;
-    color: rgb(110, 153, 218);
-  }
-  
-  /* Responsive styles */
-  .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
   }
-  
-  .navigation {
-    display: flex;
+
+  .menu-toggle {
+    display: block;
+    margin-right: 20px;
   }
-  
+
   .navigation.open {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 70px; /* Adjust to account for navbar height */
-    left: 0;
-    width: 100%;
-    background-color: rgb(44, 83, 131); /* Background color matches navbar */
   }
-  
-  .navigation li {
-    margin: 10px 0;
-  }
-  
-  /* Media query for mobile view */
-  @media (max-width: 768px) {
-    .navigation {
-      display: none;
-    }
-  
-    .menu-toggle {
-      display: block;
-      margin-right: 20px;
-    }
-  }
-  
+}

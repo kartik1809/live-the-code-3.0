@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <div className='plx-effect'>
+      <div className='plx-effect' id='home'>
         {/* <Plx className="MyAwesomeParallax" parallaxData={parallaxData}> */}
           <div className='ellipse1'></div>
           <div className='ellipse2'></div>
@@ -53,7 +53,7 @@ function App() {
           <button className='btn-2'>Join Discord</button>
         </div>
       </div>
-      <div className='contact-us'>
+      <div className='contact-us' id='contact'>
         <h2>Contact Us</h2>
         <div className="contact-details">
           <div className='email'>

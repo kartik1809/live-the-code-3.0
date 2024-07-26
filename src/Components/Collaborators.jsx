@@ -16,7 +16,7 @@ const Collaborators = () => {
         { src: '/iee.png', alt: 'IEE' },
     ];
   return (
-    <div className='collaborators'>
+    <div className='collaborators' id='collab'>
       <h1 className='collab-heading'>COLLABORATORS</h1>
       {/* <div className='collaborator-div'>
         <img src="src\assets\anvesh.png" alt=""  className='collab-list'/>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const NavBar = () => {
@@ -13,10 +14,26 @@ const NavBar = () => {
         ☰
       </button>
       <ul className={`navigation ${isOpen ? 'open' : ''}`}>
-        <li>Home</li>
-        <li>About</li>
-        <li>Gallery</li>
-        <li>Contact</li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link to="collab" smooth={true} duration={500}>
+            Collaborators
+          </Link>
+        </li>
+        <li onClick={() => setIsOpen(false)}>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
     </div>
   );
