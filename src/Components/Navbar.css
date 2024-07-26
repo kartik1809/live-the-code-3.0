@@ -23,7 +23,7 @@
 } */
 
 .Navbar.scrolled {
-  background-color: #0d4a2f; /* Solid background color after scrolling */
+  background-color: #0d2f4a; /* Solid background color after scrolling */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
 
