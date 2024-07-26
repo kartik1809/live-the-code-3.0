@@ -1,0 +1,17 @@
+.about-div{
+    color: white;
+}
+
+.about-div h2{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-div p{
+    font-size: 25px;
+    padding: 0px 10%;
+    font-weight: 550;
+    margin-top: 50px;
+    color: #ccc8c8;
+}

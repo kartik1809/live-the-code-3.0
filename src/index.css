@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height: 800px;
+}
+
+.ellipse1{
+  background: #6c1f93;
+  -webkit-filter: blur(170px);
+  filter: blur(170px);
+  height: 400px;
+  left: -10%;
+  position: absolute;
+  top: -250px;
+  width: 45vw;
+}
+
+.ellipse2{
+  background: #360498;
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  height: 45.875vw;
+  left: 75%;
+  position: absolute;
+  top: 405px;
+  width: 350px;
+  overflow: hidden;
+}
+
+.plx-effect{
+  width: 100%;
+  height: 100vh;
+}
+.dummy{
+  width: 100%;
+  height: 1000px;
+  /* background: #8f8989; */
+}
+
+.ellipse3{
+  background: #0cf;
+  -webkit-filter: blur(230px);
+  filter: blur(230px);
+  height: 38vw;
+  left: -10%;
+  position: absolute;
+  top: 1645px;
+  width: 38vw;
+  z-index: -1;
+}
+
+.ellipse4{
+  width: 42vw;
+  height: 42vw;
+  position: absolute;
+  background: #360498;
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  left: -5%;
+  top: 3501px;
+  z-index: -1;
+}
+
+.brochure{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brochure img{
+  width:752px;
+  height: 800px;
+}
+
+.ellipse5{
+  background: #0cf;
+  -webkit-filter: blur(220px);
+  filter: blur(220px);
+  height: 38vw;
+  left: 75%;
+  position: absolute;
+  top: 4719px;
+  width: 38vw;
+  z-index: -1;
+}

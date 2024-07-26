@@ -1,0 +1,141 @@
+  
+.theme-comp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.themes {
+  padding: 5%;
+  display: grid;
+  gap: 1rem;
+}
+.themes-heading{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: aliceblue;
+    margin-top: 150px;
+}
+.head-line{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(155, 168, 179);
+}
+
+/* Default: 1*8 layout */
+.themes {
+  grid-template-columns: 1fr;
+}
+
+.theme-item:last-child{
+    display: none;
+}
+
+
+
+
+/* Default (above 1500px) */
+@media (min-width: 1500px) {
+    /* 4*2 layout */
+    .themes {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* 3*3 layout for screen sizes between 1200px and 1500px */
+  @media screen and (max-width: 1500px) and (min-width: 1200px) {
+    .themes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .theme-item:last-child {
+      display: block;
+    }
+  }
+  
+  /* 2*4 layout for screen sizes between 600px and 1200px */
+  @media (max-width: 1200px) and (min-width: 600px) {
+    .themes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .theme-item:last-child {
+      display: none;
+    }
+  }
+  
+  /* 1*1 layout for screen sizes below 600px */
+  @media (max-width: 700px) {
+    .themes {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+
+
+.theme-item {
+  background: linear-gradient(104.28deg, rgb(38, 34, 71) 1.24%, rgb(36, 58, 124) 32.96%, rgb(33, 30, 60) 68.22%);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.theme-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+
+/* Keyframes for bold loading animation */
+@keyframes fadeInUpBold {
+    from {
+      opacity: 0;
+      transform: translateY(50px) scale(0.9) rotate(-5deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1) rotate(0);
+    }
+  }
+  
+  /* Default state for theme items */
+  .theme-item {
+    background: linear-gradient(104.28deg, rgb(38, 34, 71) 1.24%, rgb(36, 58, 124) 32.96%, rgb(33, 30, 60) 68.22%);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(50px); /* Positioned off-screen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  }
+  
+  /* Animation class */
+  .theme-item.visible {
+    animation: fadeInUpBold 1s ease-out forwards; /* Animation applied when in view */
+  }
+  
+  /* Hover effect */
+  .theme-item:hover {
+    transform: scale(1.05); /* Slightly scale up the item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  }
+  
+  /* Image transition on hover */
+  .theme-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth image transition */
+  }
+  
+  /* Zoom image slightly on hover */
+  .theme-item:hover img {
+    transform: scale(1.1); /* Scale up the image */
+  }
+  
+
