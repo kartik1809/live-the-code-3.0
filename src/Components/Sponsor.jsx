@@ -12,38 +12,37 @@ const Sponsor = () => {
         <div className="sponsor-item platinum">
           <h3 className="subtitle">Platinum</h3>
           <div className="sponsor-logos">
-            <img src=".\public\sponsors\dataverse.png" alt="DataverseOS" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/Devfolio.svg" alt="Devfolio" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/polygon.svg" alt="Polygon" className="sponsor-logo" />
+            <img src="/sponsors/dataverse.png" alt="DataverseOS" className="sponsor-logo" />
+            <img src="/sponsors/Devfolio.png" alt="Devfolio" className="sponsor-logo" />
+            <img src="/sponsors/polygon.png" alt="Polygon" className="sponsor-logo polygon" />
           </div>
         </div>
 
         <div className="sponsor-item gold">
           <h3 className="subtitle">Gold</h3>
           <div className="sponsor-logos">
-            <img src="https://live-the-code-2.netlify.app/images/clients/quil.png" alt="Quillaudits" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/hyper.png" alt="Hyper" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/gmc.png" alt="GMC" className="sponsor-logo" />
+            <img src="/sponsors/quil.png" alt="Quillaudits" className="sponsor-logo quill" />
+            <img src="/sponsors/hyper.png" alt="Hyper" className="sponsor-logo" />
+            <img src="/sponsors/gmc.png" alt="GMC" className="sponsor-logo" />
           </div>
         </div>
 
         <div className="sponsor-item silver">
           <h3 className="subtitle">Silver</h3>
           <div className="sponsor-logos">
-            <img src="https://live-the-code-2.netlify.app/images/clients/filecoin.svg" alt="FileCoin" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/Replit.svg" alt="Replit" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/solana.svg" alt="Solana" className="sponsor-logo" />
+            <img src="/sponsors/filecoin.png" alt="FileCoin" className="sponsor-logo fileicon" />
+            <img src="/sponsors/Replit.png" alt="Replit" className="sponsor-logo replit" />
+            <img src="/sponsors/solana.png" alt="Solana" className="sponsor-logo" />
           </div>
         </div>
 
         <div className="sponsor-item bronze">
           <h3 className="subtitle">Bronze</h3>
           <div className="sponsor-logos">
-            <img src="https://live-the-code-2.netlify.app/images/clients/intc.png" alt="InterviewCake" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/intb.png" alt="InterviewBuddy" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/axure.svg" alt="Axure" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/xyz.png" alt="XYZ" className="sponsor-logo" />
-            <img src="https://live-the-code-2.netlify.app/images/clients/verbwire.svg" alt="Verbwire" className="sponsor-logo" />
+            <img src="/sponsors/intc.png" alt="InterviewCake" className="sponsor-logo" />
+            <img src="/sponsors/intb.png" alt="InterviewBuddy" className="sponsor-logo" />
+            <img src="/sponsors/axure.png" alt="Axure" className="sponsor-logo" />
+            <img src="/sponsors/xyz.png" alt="XYZ" className="sponsor-logo" />
           </div>
         </div>
       </div>
