@@ -1,0 +1,24 @@
+.collaborators{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    color: aliceblue;
+}
+.collab-heading{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #e8e2e2;
+}
+.collaborator-div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.collab-list{
+    height: 200px;
+    width: 250px;
+    margin: 20px;
+}

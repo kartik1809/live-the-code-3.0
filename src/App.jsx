@@ -7,15 +7,17 @@ import TimeLine from './Components/TimeLine';
 import About from './Components/About';
 import Themes from './Components/Themes';
 import Sponsor from './Components/Sponsor';
+import Collaborators from './Components/Collaborators';
+import CTA from './Components/CTA';
 function App() {
   const parallaxData = [
     {
       start: 0,
-      end: 300,
+      end: 500,
       properties: [
         {
           startValue: 1,
-          endValue: 1.3,
+          endValue: 1.5,
           property: "scale",
         },
       ],
@@ -40,6 +42,7 @@ function App() {
       <Themes/>
       <div className='ellipse5'></div>
       <Sponsor/>
+      <Collaborators/>
       <div className='dummy'></div>
     </>
   )
