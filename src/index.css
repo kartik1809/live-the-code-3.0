@@ -76,10 +76,11 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px;
 }
 .brochure img{
-  width:752px;
-  height: 800px;
+  width:100%;
+  height: 100%;
 }
 
 .ellipse5{
@@ -112,14 +113,15 @@ img{
   }
 
   .brochure img{
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
   }
 
   .brochure{
     margin-top: -200px;
     display: flex;
     padding: 20px;
+    height: 800px;
   }
   
 }
