@@ -1,35 +1,70 @@
+/* Universal box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure body and html take up full width and height */
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Footer section styles */
 .footer-section {
   position: relative;
-  top: 100%;
   color: #e4e4e4;
-  font-family: Outfit;
+  font-family: Outfit, sans-serif; /* Added fallback font */
   text-align: center;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 50px 50px 0 0;
   background-color: rgb(255, 255, 255);
   background: linear-gradient(-15deg, #000422 20%, #010b56 90%);
-  box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 0 50px 0 rgba(0, 0, 0, 0.25);
   padding-bottom: 2.5em;
+  width: 100%; /* Ensure full width */
+  max-width: 100%; /* Ensure max width does not exceed viewport */
 }
+
 .footer-heading {
   padding-top: 5em;
   line-height: 32px;
   letter-spacing: 0.1em;
-  text-align: center;
   text-transform: uppercase;
 }
+
 .footer-content {
   font-size: 16px;
   line-height: 25.6px;
 }
 
-@media screen and (max-width: 400px) {
+/* Responsive styles */
+@media screen and (max-width: 768px) {
   .footer-section {
-    padding-bottom: 5em;
-    width: 400px;
-  }
-  .footer-heading {
-    padding-top: 2em;
+    padding-bottom: 3em; /* Adjust padding for medium screens */
   }
 
-  
+  .footer-heading {
+    padding-top: 3em; /* Adjust padding for medium screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-section {
+    padding-bottom: 4em; /* Adjust padding for small screens */
+    padding-left: 1em; /* Add some padding to avoid content touching the edges */
+    padding-right: 1em;
+  }
+
+  .footer-heading {
+    padding-top: 2em; /* Adjust padding for small screens */
+    font-size: 1.2rem; /* Slightly smaller font size */
+  }
+
+  .footer-content {
+    font-size: 14px; /* Adjust font size for small screens */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
 }

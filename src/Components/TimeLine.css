@@ -36,14 +36,11 @@
 
 @media screen and (max-width: 768px) {
     .timeline{
-        margin-top: 400px;
+        margin-top: -90px;
     }
 }
 @media screen and (max-width: 400px) {
     .timeline{
-        margin-top: 350px;
-    }
-    .timeline{
-        margin-left: 20px;
+        margin-top: -90px;
     }
 }

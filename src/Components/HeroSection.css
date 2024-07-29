@@ -1,96 +1,100 @@
-.hero-section{
-    color: aliceblue;
-    position: relative;
-    z-index: 10;
-    width: 80%;
-    height: 600px;
-    margin: 5% 10%;
-    font-weight: 500;
-    display: flex;
+/* Universal box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.society-name{
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    line-height: 0.3;
-    color: rgb(225, 234, 234);
-}
-.society-name span{
-    color: #059d58;
-    font-weight: 600;
-}
-.hero-content{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-.hero-banner{
-    width: 50%;
-    background-image: url('../../public/hero_banner.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.d-para{
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: 300;
-    line-height: 0;
-    color: rgb(225, 234, 234);
-}
-.eventName{
-    font-size: 64px;
-    font-weight: 600;
-    margin-top: 0px;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+/* Ensure body and html take up full width and height */
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.register-btn{
-    width: 250px;
-    height: 56px;
-    background-color: #FF5A05;
-    color: aliceblue;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.register-btn:hover{
-    background-color: #f4efed;
-    color: black;
-    transform: scale(1.1);
+.hero-section {
+  color: aliceblue;
+  position: relative;
+  z-index: 10;
+  width: 80%;
+  max-width: 100%; /* Ensure max width does not exceed 100% */
+  height: 600px;
+  margin: 5% auto; /* Center the section */
+  font-weight: 500;
+  display: flex;
+  margin-top: 125px !important;
 }
 
-@media screen and (max-width: 1000px) {
-    .hero-section {
-        flex-direction: column-reverse;
-        height: 1000px;
-    }
-    .hero-content {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-    .hero-banner {
-        width: 100%;
-        height: 50%;
-    }
+.society-name {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 0.3;
+  color: rgb(225, 234, 234);
 }
 
+.society-name span {
+  color: #059d58;
+  font-weight: 600;
+}
 
+.hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-banner {
+  width: 50%;
+  background-image: url('../../public/hero_banner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-para {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 1.5; /* Increased line-height for better readability */
+  color: rgb(225, 234, 234);
+}
+
+.eventName {
+  font-size: 64px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.register-btn {
+  width: 250px;
+  height: 56px;
+  background-color: #FF5A05;
+  color: aliceblue;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.register-btn:hover {
+  background-color: #f4efed;
+  color: black;
+  transform: scale(1.1);
+}
 .countdown-timer {
     font-size: 5rem;
     text-align: center;
@@ -119,69 +123,106 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-banner{
-        display: 100%;
-    }  
-    .countdown-timer{
-        margin-top: 40px;
-    }  
-    
-    .time-span{
-        padding-left: 10px !important;
-        font-size: 1.5rem !important;
-    }
-    .time-span2{
-        padding-left: -10px !important;
-        font-size: 1.5rem !important;
-    }
-    .time-span3{
-        padding-left: -30px !important;
-        margin-left: -10px;
-        font-size: 1.5rem !important;
-    }
-    .time-span4{
-        padding-left: -20px !important;
-        margin-left: -10px !important;
-        font-size: 1.5rem !important;
-    }
-    .timer-text{
-       font-size: 12px !important;
+/* Responsive styles */
+@media screen and (max-width: 1000px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    height: auto; /* Adjust height to auto for better responsiveness */
+    margin: 5% auto; /* Center the section */
+  }
+
+  .hero-content, .hero-banner {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .countdown-timer {
+    margin-top: 40px;
+  }
+
+  .time-span, .time-span2, .time-span3, .time-span4 {
+    font-size: 1.5rem !important;
+  }
+
+  .timer-text {
+    font-size: 12px !important;
+  }
+  
+}
+@media screen and (min-width:100px) and (max-width: 1200px) {
+    .society-name {
+        font-size: 25px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .hero-banner{
-        height: 200px;
-    }
-    .hero-section{
-        margin-top: -400px;
-        font-size: 3rem;
-        margin-bottom: 40px;
-        height: 1000px;
-    }
-    .society-name{
-        font-size: 25px;
-    }
-    .eventName{
-        font-size: 40px;
-    }
-    .event-desc{
-        font-size: 1.5rem;
-    }
-    .event-desc-2{
-        font-size: 12px;
-    }
-    .hero-section{
-        width: 100%;
-        margin-left: 10px;
-    }
+@media screen and (max-width: 768px) {
+  .hero-banner {
+    height: 50%;
+  }
+
+  .countdown-timer {
+    margin-top: 40px;
+  }
+
+  .time-span, .time-span2, .time-span3, .time-span4 {
+    font-size: 1.5rem !important;
+  }
+
+  .timer-text {
+    font-size: 12px !important;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  .hero-banner {
+    height: 200px;
+  }
+
+  .hero-section {
+    margin-top: 0;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    height: auto; /* Adjust height to auto for better responsiveness */
+    width: 90%; /* Ensure max width does not exceed viewport */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .society-name {
+    font-size: 25px;
+  }
+
+  .eventName {
+    font-size: 40px;
+  }
+
+  .event-desc {
+    font-size: 1.5rem;
+  }
+
+  .event-desc-2 {
+    font-size: 12px;
+  }
+  .timer-details {
+    margin-top: -15px;
+  }
+  .t2{
+    padding-left: 5px;
+  }
+}
+
 @media screen and (max-width: 400px) {
-    .hero-section{
-        margin-top: -350px;
-        width: 100%;
-        margin-left: 20px;
-    }
-    
+  .hero-section {
+    width: 90%; /* Ensure max width does not exceed viewport */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.countdown-timer{
+    display: flex;
+}
+.timer-details{
+    display: flex;
+    flex-direction: column;
 }

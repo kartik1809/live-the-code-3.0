@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <div className='timer-details'><span className='time-span'>&nbsp;{days.toString().padStart(2, '0')}&nbsp;:</span><span className='timer-text'>Days</span></div>
                 <div className='timer-details'><span className='time-span2'>&nbsp;{hours.toString().padStart(2, '0')}&nbsp;:</span><span className='timer-text'>Hours</span></div>
                 <div className='timer-details'><span className='time-span3'>&nbsp;{minutes.toString().padStart(2, '0')}&nbsp;:</span><span className='timer-text'>Minutes</span></div>
-                <div className='timer-details'><span className='time-span4'>{seconds.toString().padStart(2, '0')}</span> <span className='timer-text'>Seconds</span></div>
+                <div className='timer-details'><span className='time-span4'>{seconds.toString().padStart(2, '0')}</span> <span className='timer-text t2'>Seconds</span></div>
             </div>
           );
         }

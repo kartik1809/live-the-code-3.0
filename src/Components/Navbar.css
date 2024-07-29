@@ -1,5 +1,19 @@
-/* Navbar.css */
+/* Universal box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* Ensure body and html take up full width and height */
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Navbar styles */
 .Navbar {
   position: fixed;
   width: 100%;
@@ -14,7 +28,7 @@
   background-color: rgba(0, 0, 0, 0); /* Transparent background */
 }
 
-/* Background colors and gradient (you can uncomment and adjust if needed) */
+/* Uncomment and adjust background colors if needed */
 /* .Navbar {
   background-color: #097545;
   background: linear-gradient(-15deg, #4e5fda 20%, #081786 90%);
