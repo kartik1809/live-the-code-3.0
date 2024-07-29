@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './themes.css';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Themes = () => {
   const themes = [
@@ -11,7 +12,7 @@ const Themes = () => {
     { id: 6, img: "https://i.postimg.cc/mZdkwYXm/7.png", title: "AR/VR", desc: "Immerse users in virtual realms, creating new experiences that blur the line between real and digital worlds." },
     { id: 7, img: "https://i.postimg.cc/MHrGpwMC/8.png", title: "HEALTH", desc: "Revolutionize healthcare through data-driven diagnostics, telemedicine, and advancements in patient care." },
     { id: 8, img: "https://i.postimg.cc/X7pJDrt4/9.png", title: "OPEN INNOVATION", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
-    { id: 9, img: "https://i.postimg.cc/X7pJDrt4/9.png", title: "OPEN INNOVATION", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
+    { id: 9, img: "/exploreThemes.png", title: "EXPLORE MORE", desc: "Collaborate across boundaries to devise innovative solutions that challenge norms and drive progress." },
   ];
 
   const observeRef = useRef([]);
@@ -59,7 +60,7 @@ const Themes = () => {
                     <h1>{theme.title}</h1>
                   </div>
                   <div className="flip-card-back">
-                    <p>{theme.desc}</p>
+                    <p>{theme.id==9?<a className='read-more' href='https://get.tech/blog/hackathon-ideas/'>Read More <ArrowForwardIcon className='arrow'></ArrowForwardIcon></a>:`${theme.desc}`}</p>
                   </div>
                 </div>
               </div>
