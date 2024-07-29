@@ -5,7 +5,7 @@ const MediaLogo = () => {
     <>
       <div className="logo-section">
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/geeksforgeeks_adgips/"
           className="instagram-link"
           target="_blank"
         >
@@ -66,7 +66,7 @@ const MediaLogo = () => {
           </svg>
         </a>
         <a
-          href="https://www.twitter.com"
+          href="https://x.com/CAdgitm"
           className="twitter-link"
           target="_blank"
         >
@@ -119,61 +119,15 @@ const MediaLogo = () => {
           </svg>
         </a>
         <a
-          href="https://www.facebook.com"
-          className="facebook-link"
+          href="https://www.linkedin.com/company/codechefadgitm/mycompany/"
+          className="linkedIn-link"
           target="_blank"
         >
-          <svg
-            className="facebook-logo"
-            width="41"
-            height="41"
-            viewBox="0 0 41 41"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_b_108_7)">
-              <circle
-                cx="20.25"
-                cy="20.25"
-                r="20.25"
-                fill="white"
-                fill-opacity="0.29"
-              />
-            </g>
-            <path
-              d="M23.1336 14.9154H24.9501V12.1236C24.6367 12.0856 23.5589 12 22.3036 12C19.6845 12 17.8903 13.4537 17.8903 16.1254V18.5843H15V21.7052H17.8903V29.5581H21.4339V21.706H24.2073L24.6475 18.585H21.4331V16.4349C21.4339 15.5328 21.7091 14.9154 23.1336 14.9154Z"
-              fill="#E4E4E4"
-            />
-            <defs>
-              <filter
-                id="filter0_b_108_7"
-                x="-10"
-                y="-10"
-                width="60.5"
-                height="60.5"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_108_7"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_108_7"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
+          <img src="linkedin.png" alt="Linked-In-Logo" className="linkedin-logo"/>
         </a>
 
         <a
-          href="https://www.youtube.com"
+          href="https://www.youtube.com/@CodeChefADGITMChapter"
           className="youtube-link"
           target="_blank"
         >

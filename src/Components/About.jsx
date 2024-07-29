@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div className='about-div' id='about'>
         <h2>What is Live The Code 3.0 Edition?</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum enim tempore fugit saepe earum asperiores placeat aspernatur, recusandae, praesentium, quos vero! Illum quam ipsam voluptatum saepe eaque harum, beatae modi labore, iure reprehenderit quis explicabo dicta, veritatis tempore cupiditate natus?<p>
-        </p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aperiam sapiente praesentium. Aliquam ducimus necessitatibus iste voluptatum. Sed unde quo magni aspernatur corporis. Odit cupiditate dolores illo mollitia accusamus id!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laudantium, officiis fugiat accusantium nam necessitatibus voluptatum suscipit alias adipisci magni doloribus vero quod! Reiciendis eaque dolorum quia dolore facilis doloribus!</p>
+        <p>Live the Code 3.0, an exhilarating hackathon hosted by the GFG ADGIPS society! This event is designed to bring together the brightest minds in coding, innovation, and problem-solving. Whether you’re a seasoned developer or a passionate beginner, this is your chance to showcase your skills, collaborate with like-minded individuals, and create groundbreaking solutions.<p>
+        </p>Work in teams to tackle real-world challenges.
+Innovate: Develop creative solutions and push the boundaries of technology. <br /> Gain insights from industry experts through workshops and mentorship. Win exciting prizes and recognition for your innovative projects.</p>
     </div>
   )
 }

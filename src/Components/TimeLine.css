@@ -16,12 +16,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 20px;
 }
 .vertical-timeline-element-content{
     box-shadow: none !important; 
     background-color: rgb(50, 43, 43); 
     border-radius: 20px;
+}
+.vertical-timeline-element-title{
+    font-size: 30px;
 }
 .vertical-timeline-element-content.bounce-in{
     padding: 0 !important;
@@ -31,7 +35,7 @@
     border-radius: 20px;
 }
 .vertical-timeline-element-content.bounce-in:last-child{
-    background-color: black;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {

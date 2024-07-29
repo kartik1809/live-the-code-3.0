@@ -25,7 +25,7 @@ const HeroSection = () => {
         <h4 className='society-name'>&lt;<span>GFG</span> ADGIPS Chapter/&gt;</h4>
         <p className='d-para'>PRESENTS</p>
         <h1 className='eventName'><span>Live</span><br/> The Code 3.0</h1>
-        <p className='event-desc-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, expedita!</p>
+        <p className='event-desc-2'>The 3rd iteration of GFG ADGIPS, LIVE THE CODE 3.0 welcomes you!</p>
         <button className='register-btn'>Register Now!</button>
       </div>
       <div className='hero-banner'>

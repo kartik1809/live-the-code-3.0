@@ -9,11 +9,14 @@
   margin-right: 10px;
   cursor: pointer;
 }
-.facebook-logo {
+
+.youtube-logo {
   margin-right: 10px;
   cursor: pointer;
 }
-.youtube-logo {
+.linkedin-logo {
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
   cursor: pointer;
 }
