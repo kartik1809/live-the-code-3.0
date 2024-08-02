@@ -105,8 +105,14 @@
 
 @media (max-width: 768px) {
   .sponsor-logos {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+  }
+  .bronze{
+    height: 300px;
+  }
+  .axure,.xyz{
+    margin-top: 40px !important;
   }
 }
 
@@ -115,9 +121,55 @@
     height: 450px;
   }
   .sponsor-logos{
-    flex-direction: column;
     justify-content: space-around;
     height: 300px;
   }
+}
 
+.sponsor-logo {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  object-fit: contain; 
+}
+
+
+.polygon{
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: -30px auto;
+  object-fit: contain; 
+  width: 200px; 
+  max-height: 200px; 
+}
+
+@media (min-width: 768px){
+  .gmc,.quill{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: -30px auto;
+    object-fit: contain; 
+    width: 100px; 
+    max-height: 200px; 
+  }
+  .replit,.hyper{
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: -30px auto;
+    object-fit: contain; 
+    width: 200px; 
+    max-height: 200px;
+  }
+  .filecoin{
+    height: auto; 
+    display: block; 
+    margin: -20px auto; 
+    object-fit: contain; 
+    width: 200px;
+    max-height: 250px; 
+  }
 }

@@ -22,6 +22,9 @@
     width: 250px;
     margin: 20px;
 }
+.mobile-carousel-container{
+    display: none;
+}
 
 @media screen and (max-width:400px) {
     .collab-heading{
@@ -29,4 +32,22 @@
         padding-left: 20px;
     }
 
+}
+@media screen and (max-width: 800px){
+   .carousel-container{
+        display: none;
+   }
+
+   .mobile-carousel-container{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         padding: 10px 5%;
+   }
+
+   .collab-list{
+         width: 80%;
+         margin: 15px;
+         margin-right: 0;
+         margin-left: 10px;
+   }
 }

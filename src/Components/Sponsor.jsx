@@ -22,15 +22,15 @@ const Sponsor = () => {
           <h3 className="subtitle">Gold</h3>
           <div className="sponsor-logos">
             <img src="/sponsors/quil.png" alt="Quillaudits" className="sponsor-logo quill" />
-            <img src="/sponsors/hyper.png" alt="Hyper" className="sponsor-logo" />
-            <img src="/sponsors/gmc.png" alt="GMC" className="sponsor-logo" />
+            <img src="/sponsors/hyper.png" alt="Hyper" className="sponsor-logo hyper" />
+            <img src="/sponsors/gmc.png" alt="GMC" className="sponsor-logo gmc" />
           </div>
         </div>
 
         <div className="sponsor-item silver">
           <h3 className="subtitle">Silver</h3>
           <div className="sponsor-logos">
-            <img src="/sponsors/filecoin.png" alt="FileCoin" className="sponsor-logo fileicon" />
+            <img src="/sponsors/filecoin.png" alt="FileCoin" className="sponsor-logo filecoin" />
             <img src="/sponsors/Replit.png" alt="Replit" className="sponsor-logo replit" />
             <img src="/sponsors/solana.png" alt="Solana" className="sponsor-logo" />
           </div>
@@ -41,8 +41,8 @@ const Sponsor = () => {
           <div className="sponsor-logos">
             <img src="/sponsors/intc.png" alt="InterviewCake" className="sponsor-logo" />
             <img src="/sponsors/intb.png" alt="InterviewBuddy" className="sponsor-logo" />
-            <img src="/sponsors/axure.png" alt="Axure" className="sponsor-logo" />
-            <img src="/sponsors/xyz.png" alt="XYZ" className="sponsor-logo" />
+            <img src="/sponsors/axure.png" alt="Axure" className="sponsor-logo axure" />
+            <img src="/sponsors/xyz.png" alt="XYZ" className="sponsor-logo xyz" />
           </div>
         </div>
       </div>

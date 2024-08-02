@@ -4,7 +4,6 @@ import Carousel from './Carousel';
 const Collaborators = () => {
     const collaborators = [
         { src: '/anvesh.png', alt: 'Anvesh' },
-        { src: '/cc_abes.png', alt: 'CC ABES' },
         { src: '/cc_bv.png', alt: 'CC BV' },
         { src: '/cc_mit.png', alt: 'CC MIT' },
         { src: '/cdao.png', alt: 'CDAO' },
@@ -52,7 +51,20 @@ const Collaborators = () => {
         ))}
       </div>
     </div>
+
+    {/* For Mobile View */}
+    <div className="mobile-carousel-container">
+   
+        {collaborators.map((collab, index) => (
+          <img
+            key={index}
+            src={collab.src}
+            alt={collab.alt}
+            className="collab-list"
+          />
+        ))}
     </div>
+  </div>
   )
 }
 
